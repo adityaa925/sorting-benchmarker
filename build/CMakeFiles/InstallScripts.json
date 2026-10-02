@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/cmake_install.cmake",
-		"C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/tests/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
