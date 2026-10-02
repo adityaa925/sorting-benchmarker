@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Benchmark Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --surface-hover: #334155;
+            --border: #334155;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1440px; margin: 0 auto; }
+        header { margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+        h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+        .subtitle { color: var(--text-muted); font-size: 14px; }
+        
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .stat-card .label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-card .value { font-size: 20px; font-weight: 700; color: var(--accent); margin-top: 4px; word-break: break-all; }
+
+        .controls-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .control-group { display: flex; flex-direction: column; gap: 6px; }
+        .control-group label { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+        select, input[type="text"] {
+            background: #0f172a;
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            min-width: 180px;
+            outline: none;
+        }
+        select:focus, input[type="text"]:focus {
+            border-color: var(--primary);
+        }
+        .filter-checkboxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            margin-top: 4px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            color: var(--text);
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        @media (max-width: 768px) {
+            .chart-grid { grid-template-columns: 1fr; }
+        }
+        .chart-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+        .chart-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .canvas-container { position: relative; height: 350px; width: 100%; }
+
+        .table-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 32px;
+        }
+        .table-header-bar {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .table-responsive {
+            overflow-x: auto;
+            max-height: 500px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 13px;
+        }
+        th {
+            background: #111827;
+            padding: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+        tr:hover td {
+            background: var(--surface-hover);
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge-ok { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+        .badge-skip { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+        .file-drop-area {
+            border: 2px dashed var(--border);
+            padding: 24px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 24px;
+            display: none;
+            background: rgba(30, 41, 59, 0.5);
+        }
+        .file-drop-area.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sorting Algorithms Benchmark Suite</h1>
+            <p class="subtitle" id="reportTimestamp">Empirical Performance, Hardware Invariants & Theoretical Complexity</p>
+        </header>
+
+        <div id="filePickerBanner" class="file-drop-area">
+            <p style="margin-bottom: 10px;">No benchmark data embedded. Load results JSON file:</p>
+            <input type="file" id="jsonFileInput" accept=".json">
+        </div>
+
+        <div class="grid-cards">
+            <div class="stat-card">
+                <div class="label">Total Benchmarked Algorithms</div>
+                <div class="value" id="statAlgos">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Tested Distributions</div>
+                <div class="value" id="statDists">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Measurement Scale Range</div>
+                <div class="value" id="statScale">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Configuration</div>
+                <div class="value" id="statConfig" style="font-size: 15px;">-</div>
+            </div>
+        </div>
+
+        <div class="controls-card">
+            <div class="control-group">
+                <label for="distSelect">Distribution Profile</label>
+                <select id="distSelect" onchange="renderAll()"></select>
+            </div>
+            <div class="control-group">
+                <label for="scaleSelect">Y-Axis Scale Mode</label>
+                <select id="scaleSelect" onchange="renderCharts()">
+                    <option value="logarithmic">Logarithmic (O(N) vs O(N log N) vs O(N²))</option>
+                    <option value="linear">Linear Scale</option>
+                </select>
+            </div>
+            <div class="control-group" style="flex: 1;">
+                <label>Filter Algorithms</label>
+                <div class="filter-checkboxes" id="algoCheckboxes"></div>
+            </div>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Execution Time vs Input Size (N)</h3>
+                <div class="canvas-container">
+                    <canvas id="timeChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3>Exact Comparisons vs Input Size (N)</h3>
+                <div class="canvas-container">
+                    <canvas id="comparisonsChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3>Data Moves / Swaps vs Input Size (N)</h3>
+                <div class="canvas-container">
+                    <canvas id="movesChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3>Coefficient of Variation (CV% Measurement Jitter)</h3>
+                <div class="canvas-container">
+                    <canvas id="cvChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-header-bar">
+                <h3 style="font-size: 16px; font-weight: 600;">Benchmark Results Data Table</h3>
+                <input type="text" id="tableSearch" placeholder="Search algorithm, size, distribution..." oninput="filterTable()">
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Algorithm</th>
+                            <th>Distribution</th>
+                            <th>Input Size</th>
+                            <th>Mean Time</th>
+                            <th>Median Time</th>
+                            <th>StdDev</th>
+                            <th>CV%</th>
+                            <th>Comparisons</th>
+                            <th>Moves</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Embedded benchmark data placeholder replaced by generator
+        let rawData = /*{{BENCHMARK_DATA}}*/ null;
+
+        const defaultColors = [
+            '#ef4444', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#06b6d4', '#ec4899', '#84cc16'
+        ];
+
+        let timeChart = null;
+        let comparisonsChart = null;
+        let movesChart = null;
+        let cvChart = null;
+
+        function initData() {
+            if (!rawData) {
+                document.getElementById('filePickerBanner').classList.add('active');
+                document.getElementById('jsonFileInput').addEventListener('change', function(e) {
+                    const file = e.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function(evt) {
+                            try {
+                                rawData = JSON.parse(evt.target.result);
+                                document.getElementById('filePickerBanner').classList.remove('active');
+                                setupDashboard();
+                            } catch (err) {
+                                alert("Failed to parse JSON file: " + err.message);
+                            }
+                        };
+                        reader.readAsText(file);
+                    }
+                });
+                return;
+            }
+            setupDashboard();
+        }
+
+        function setupDashboard() {
+            const results = rawData.results || [];
+            const meta = rawData.metadata || {};
+            if (meta.timestamp) {
+                document.getElementById('reportTimestamp').innerText = `Generated on: ${meta.timestamp} | Suite v${meta.version || '1.0'}`;
+            }
+
+            const algos = [...new Set(results.map(r => r.algorithm))];
+            const dists = [...new Set(results.map(r => r.distribution))];
+            const sizes = [...new Set(results.map(r => r.input_size))].sort((a, b) => a - b);
+
+            document.getElementById('statAlgos').innerText = algos.length;
+            document.getElementById('statDists').innerText = dists.length;
+            document.getElementById('statScale').innerText = sizes.length ? `N=${sizes[0]} to ${sizes[sizes.length - 1].toLocaleString()}` : '-';
+            
+            const cfg = meta.config || {};
+            document.getElementById('statConfig').innerText = `Warmup: ${cfg.warmup_runs || 3} | Runs: ${cfg.measurement_runs || 5} | Throttle N²: ${cfg.max_n2_size || 50000}`;
+
+            const distSelect = document.getElementById('distSelect');
+            distSelect.innerHTML = '';
+            dists.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d;
+                opt.innerText = d;
+                distSelect.appendChild(opt);
+            });
+
+            const checkboxesDiv = document.getElementById('algoCheckboxes');
+            checkboxesDiv.innerHTML = '';
+            algos.forEach((a, idx) => {
+                const label = document.createElement('label');
+                label.className = 'checkbox-label';
+                label.innerHTML = `
+                    <input type="checkbox" value="${a}" checked onchange="renderCharts()">
+                    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${defaultColors[idx % defaultColors.length]};"></span>
+                    ${a}
+                `;
+                checkboxesDiv.appendChild(label);
+            });
+
+            renderAll();
+        }
+
+        function getSelectedAlgorithms() {
+            const boxes = document.querySelectorAll('#algoCheckboxes input[type="checkbox"]:checked');
+            return Array.from(boxes).map(b => b.value);
+        }
+
+        function formatTime(ns) {
+            if (ns === undefined || ns === null || isNaN(ns)) return '-';
+            if (ns >= 1e9) return (ns / 1e9).toFixed(3) + ' s';
+            if (ns >= 1e6) return (ns / 1e6).toFixed(3) + ' ms';
+            if (ns >= 1e3) return (ns / 1e3).toFixed(2) + ' µs';
+            return ns.toFixed(0) + ' ns';
+        }
+
+        function formatCount(num) {
+            if (num === undefined || num === null || isNaN(num)) return '-';
+            if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
+            if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
+            if (num >= 1e3) return (num / 1e3).toFixed(1) + 'K';
+            return num.toLocaleString();
+        }
+
+        function renderAll() {
+            renderCharts();
+            renderTable();
+        }
+
+        function renderCharts() {
+            const results = (rawData && rawData.results) ? rawData.results : [];
+            const selectedDist = document.getElementById('distSelect').value;
+            const selectedAlgos = getSelectedAlgorithms();
+            const scaleMode = document.getElementById('scaleSelect').value;
+
+            const distResults = results.filter(r => r.distribution === selectedDist);
+            const sizes = [...new Set(distResults.map(r => r.input_size))].sort((a, b) => a - b);
+
+            const allAlgos = [...new Set(results.map(r => r.algorithm))];
+
+            function buildDatasets(metricExtractor) {
+                return selectedAlgos.map(algo => {
+                    const colorIdx = allAlgos.indexOf(algo);
+                    const color = defaultColors[colorIdx % defaultColors.length];
+                    const dataPoints = sizes.map(size => {
+                        const entry = distResults.find(r => r.algorithm === algo && r.input_size === size && !r.skipped);
+                        return entry ? metricExtractor(entry) : null;
+                    });
+                    return {
+                        label: algo,
+                        data: dataPoints,
+                        borderColor: color,
+                        backgroundColor: color + '33',
+                        borderWidth: 2,
+                        tension: 0.15,
+                        spanGaps: true
+                    };
+                });
+            }
+
+            const timeDatasets = buildDatasets(r => r.time_ns ? r.time_ns.mean : null);
+            const compDatasets = buildDatasets(r => r.metrics ? r.metrics.comparisons : null);
+            const moveDatasets = buildDatasets(r => r.metrics ? r.metrics.moves : null);
+            const cvDatasets = buildDatasets(r => r.time_ns ? r.time_ns.cv_percent : null);
+
+            timeChart = updateChartInstance(timeChart, 'timeChart', sizes, timeDatasets, 'Execution Time (ns)', scaleMode);
+            comparisonsChart = updateChartInstance(comparisonsChart, 'comparisonsChart', sizes, compDatasets, 'Exact Comparisons', scaleMode);
+            movesChart = updateChartInstance(movesChart, 'movesChart', sizes, moveDatasets, 'Element Swaps / Moves', scaleMode);
+            cvChart = updateChartInstance(cvChart, 'cvChart', sizes, cvDatasets, 'CV % (Jitter)', 'linear');
+        }
+
+        function updateChartInstance(chartInstance, canvasId, labels, datasets, yTitle, yScaleType) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+            return new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels.map(s => s >= 1000 ? (s / 1000) + 'K' : s),
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            grid: { color: 'rgba(255,255,255,0.06)' },
+                            ticks: { color: '#94a3b8' },
+                            title: { display: true, text: 'Input Scale (N)', color: '#94a3b8' }
+                        },
+                        y: {
+                            type: yScaleType,
+                            grid: { color: 'rgba(255,255,255,0.06)' },
+                            ticks: {
+                                color: '#94a3b8',
+                                callback: function(val) {
+                                    return formatCount(val);
+                                }
+                            },
+                            title: { display: true, text: yTitle, color: '#94a3b8' }
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: '#f8fafc', boxWidth: 12 } },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) label += ': ';
+                                    if (context.parsed.y !== null) {
+                                        label += formatCount(context.parsed.y);
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderTable() {
+            const results = (rawData && rawData.results) ? rawData.results : [];
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            results.forEach(r => {
+                const tr = document.createElement('tr');
+                const isSkipped = r.skipped;
+
+                tr.innerHTML = `
+                    <td style="font-weight: 600;">${r.algorithm}</td>
+                    <td>${r.distribution}</td>
+                    <td>${r.input_size.toLocaleString()}</td>
+                    <td>${isSkipped ? '-' : formatTime(r.time_ns.mean)}</td>
+                    <td>${isSkipped ? '-' : formatTime(r.time_ns.median)}</td>
+                    <td>${isSkipped ? '-' : formatTime(r.time_ns.stddev)}</td>
+                    <td>${isSkipped ? '-' : (r.time_ns.cv_percent ? r.time_ns.cv_percent.toFixed(2) + '%' : '0.00%')}</td>
+                    <td>${isSkipped ? '-' : formatCount(r.metrics.comparisons)}</td>
+                    <td>${isSkipped ? '-' : formatCount(r.metrics.moves)}</td>
+                    <td>
+                        <span class="badge ${isSkipped ? 'badge-skip' : 'badge-ok'}">
+                            ${isSkipped ? 'SKIPPED: ' + (r.skip_reason || 'O(N²)') : 'OK'}
+                        </span>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function filterTable() {
+            const query = document.getElementById('tableSearch').value.toLowerCase();
+            const rows = document.querySelectorAll('#tableBody tr');
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                row.style.display = text.includes(query) ? '' : 'none';
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', initData);
+    </script>
+</body>
+</html>

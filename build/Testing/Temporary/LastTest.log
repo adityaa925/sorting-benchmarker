@@ -1,0 +1,34 @@
+Start testing: Oct 02 15:09 India Standard Time
+----------------------------------------------------------
+1/1 Testing: sorting_correctness
+1/1 Test: sorting_correctness
+Command: "C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/tests/test_sorting.exe"
+Directory: C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/tests
+"sorting_correctness" start time: Oct 02 15:09 India Standard Time
+Output:
+----------------------------------------------------------
+Running sorting algorithm correctness tests...
+
+PASS: Bubble Sort
+PASS: Insertion Sort
+PASS: Merge Sort
+PASS: Quick Sort
+PASS: Quick Sort 3-Way
+PASS: std::sort
+PASS: std::stable_sort
+PASS: Stability test
+PASS: Metrics tracking
+  Comparisons: 28
+  Moves: 34
+PASS: Algorithm properties
+
+All tests PASSED!
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"sorting_correctness" end time: Oct 02 15:09 India Standard Time
+"sorting_correctness" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 02 15:09 India Standard Time

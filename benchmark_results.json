@@ -1,0 +1,4766 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-02T09:39:55Z",
+    "version": "1.0.0",
+    "config": {
+      "warmup_runs": 2,
+      "measurement_runs": 3,
+      "max_n2_size": 50000,
+      "max_time_per_run_seconds": 30,
+      "input_sizes": [100, 500, 1000, 5000, 10000],
+      "distributions": ["Random", "Sorted", "Reverse Sorted", "Nearly Sorted", "High Duplicates"]
+    }
+  },
+  "results": [
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 14633.3,
+        "median": 14000,
+        "stddev": 895.669,
+        "min": 14000,
+        "max": 15900,
+        "cv_percent": 6.12074
+      },
+      "metrics": {
+        "comparisons": 24675,
+        "moves": 13455,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 549267,
+        "median": 545500,
+        "stddev": 17150.4,
+        "min": 530400,
+        "max": 571900,
+        "cv_percent": 3.12241
+      },
+      "metrics": {
+        "comparisons": 618110,
+        "moves": 318405,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.7656e+06,
+        "median": 1.7792e+06,
+        "stddev": 87243.6,
+        "min": 1.6526e+06,
+        "max": 1.865e+06,
+        "cv_percent": 4.9413
+      },
+      "metrics": {
+        "comparisons": 2494695,
+        "moves": 1255245,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.76825e+07,
+        "median": 1.76223e+07,
+        "stddev": 1.74647e+06,
+        "min": 1.55742e+07,
+        "max": 1.98509e+07,
+        "cv_percent": 9.87687
+      },
+      "metrics": {
+        "comparisons": 62487470,
+        "moves": 30940285,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.04967e+08,
+        "median": 9.20537e+07,
+        "stddev": 2.05925e+07,
+        "min": 8.88177e+07,
+        "max": 1.34029e+08,
+        "cv_percent": 19.6181
+      },
+      "metrics": {
+        "comparisons": 249847875,
+        "moves": 125070880,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 400,
+        "median": 400,
+        "stddev": 81.6497,
+        "min": 300,
+        "max": 500,
+        "cv_percent": 20.4124
+      },
+      "metrics": {
+        "comparisons": 495,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 566.667,
+        "median": 600,
+        "stddev": 47.1405,
+        "min": 500,
+        "max": 600,
+        "cv_percent": 8.3189
+      },
+      "metrics": {
+        "comparisons": 2495,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 800,
+        "median": 800,
+        "stddev": 0,
+        "min": 800,
+        "max": 800,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 4995,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3033.33,
+        "median": 3000,
+        "stddev": 47.1405,
+        "min": 3000,
+        "max": 3100,
+        "cv_percent": 1.55408
+      },
+      "metrics": {
+        "comparisons": 24995,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6400,
+        "median": 6400,
+        "stddev": 0,
+        "min": 6400,
+        "max": 6400,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 49995,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7600,
+        "median": 7600,
+        "stddev": 81.6497,
+        "min": 7500,
+        "max": 7700,
+        "cv_percent": 1.07434
+      },
+      "metrics": {
+        "comparisons": 24750,
+        "moves": 24750,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 181467,
+        "median": 174800,
+        "stddev": 9855.4,
+        "min": 174200,
+        "max": 195400,
+        "cv_percent": 5.43097
+      },
+      "metrics": {
+        "comparisons": 623750,
+        "moves": 623750,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 715067,
+        "median": 710800,
+        "stddev": 31742.1,
+        "min": 678500,
+        "max": 755900,
+        "cv_percent": 4.43904
+      },
+      "metrics": {
+        "comparisons": 2497500,
+        "moves": 2497500,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2.3875e+07,
+        "median": 2.52935e+07,
+        "stddev": 3.48689e+06,
+        "min": 1.90757e+07,
+        "max": 2.72558e+07,
+        "cv_percent": 14.6048
+      },
+      "metrics": {
+        "comparisons": 62487500,
+        "moves": 62487500,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 9.35766e+07,
+        "median": 9.52242e+07,
+        "stddev": 7.93792e+06,
+        "min": 8.31361e+07,
+        "max": 1.02369e+08,
+        "cv_percent": 8.48281
+      },
+      "metrics": {
+        "comparisons": 249975000,
+        "moves": 249975000,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5166.67,
+        "median": 5000,
+        "stddev": 235.702,
+        "min": 5000,
+        "max": 5500,
+        "cv_percent": 4.56198
+      },
+      "metrics": {
+        "comparisons": 16195,
+        "moves": 875,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 156600,
+        "median": 164000,
+        "stddev": 19730.9,
+        "min": 129600,
+        "max": 176200,
+        "cv_percent": 12.5995
+      },
+      "metrics": {
+        "comparisons": 590400,
+        "moves": 40135,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 626233,
+        "median": 625600,
+        "stddev": 7728.88,
+        "min": 617100,
+        "max": 636000,
+        "cv_percent": 1.23419
+      },
+      "metrics": {
+        "comparisons": 2391925,
+        "moves": 155310,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.39842e+07,
+        "median": 1.39758e+07,
+        "stddev": 1.40565e+06,
+        "min": 1.22668e+07,
+        "max": 1.57099e+07,
+        "cv_percent": 10.0517
+      },
+      "metrics": {
+        "comparisons": 62287985,
+        "moves": 4016920,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5.48601e+07,
+        "median": 5.52884e+07,
+        "stddev": 3.1601e+06,
+        "min": 5.07934e+07,
+        "max": 5.84984e+07,
+        "cv_percent": 5.76029
+      },
+      "metrics": {
+        "comparisons": 249858900,
+        "moves": 15803440,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 55400,
+        "median": 9900,
+        "stddev": 65197.1,
+        "min": 8700,
+        "max": 147600,
+        "cv_percent": 117.684
+      },
+      "metrics": {
+        "comparisons": 23125,
+        "moves": 9715,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 230533,
+        "median": 229600,
+        "stddev": 6890.25,
+        "min": 222600,
+        "max": 239400,
+        "cv_percent": 2.98883
+      },
+      "metrics": {
+        "comparisons": 595395,
+        "moves": 241870,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 776733,
+        "median": 766700,
+        "stddev": 14330.9,
+        "min": 766500,
+        "max": 797000,
+        "cv_percent": 1.84503
+      },
+      "metrics": {
+        "comparisons": 2408670,
+        "moves": 854025,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.6525e+07,
+        "median": 1.61257e+07,
+        "stddev": 3.08412e+06,
+        "min": 1.29633e+07,
+        "max": 2.04861e+07,
+        "cv_percent": 18.6633
+      },
+      "metrics": {
+        "comparisons": 59974985,
+        "moves": 25385210,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.0885e+08,
+        "median": 1.10664e+08,
+        "stddev": 3.33122e+06,
+        "min": 1.04178e+08,
+        "max": 1.11709e+08,
+        "cv_percent": 3.06037
+      },
+      "metrics": {
+        "comparisons": 239018145,
+        "moves": 100543370,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7200,
+        "median": 7200,
+        "stddev": 653.197,
+        "min": 6400,
+        "max": 8000,
+        "cv_percent": 9.07218
+      },
+      "metrics": {
+        "comparisons": 24315,
+        "moves": 11890,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 278500,
+        "median": 281000,
+        "stddev": 15248.8,
+        "min": 258700,
+        "max": 295800,
+        "cv_percent": 5.47534
+      },
+      "metrics": {
+        "comparisons": 620525,
+        "moves": 310015,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 962467,
+        "median": 944100,
+        "stddev": 33447.1,
+        "min": 933900,
+        "max": 1.0094e+06,
+        "cv_percent": 3.47514
+      },
+      "metrics": {
+        "comparisons": 2455980,
+        "moves": 1187050,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.93907e+07,
+        "median": 1.95007e+07,
+        "stddev": 628996,
+        "min": 1.85713e+07,
+        "max": 2.01002e+07,
+        "cv_percent": 3.2438
+      },
+      "metrics": {
+        "comparisons": 62451755,
+        "moves": 31458835,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7.009e+07,
+        "median": 7.20411e+07,
+        "stddev": 1.38232e+07,
+        "min": 5.22691e+07,
+        "max": 8.59597e+07,
+        "cv_percent": 19.722
+      },
+      "metrics": {
+        "comparisons": 249640385,
+        "moves": 125883170,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 566.667,
+        "median": 500,
+        "stddev": 94.2809,
+        "min": 500,
+        "max": 700,
+        "cv_percent": 16.6378
+      },
+      "metrics": {
+        "comparisons": 495,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 800,
+        "median": 800,
+        "stddev": 0,
+        "min": 800,
+        "max": 800,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 2495,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1166.67,
+        "median": 1200,
+        "stddev": 47.1405,
+        "min": 1100,
+        "max": 1200,
+        "cv_percent": 4.04061
+      },
+      "metrics": {
+        "comparisons": 4995,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4166.67,
+        "median": 4100,
+        "stddev": 94.2809,
+        "min": 4100,
+        "max": 4300,
+        "cv_percent": 2.26274
+      },
+      "metrics": {
+        "comparisons": 24995,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 11566.7,
+        "median": 11600,
+        "stddev": 47.1405,
+        "min": 11500,
+        "max": 11600,
+        "cv_percent": 0.407554
+      },
+      "metrics": {
+        "comparisons": 49995,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 9700,
+        "median": 9400,
+        "stddev": 571.548,
+        "min": 9200,
+        "max": 10500,
+        "cv_percent": 5.89224
+      },
+      "metrics": {
+        "comparisons": 24750,
+        "moves": 24750,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 170667,
+        "median": 166600,
+        "stddev": 5964.52,
+        "min": 166300,
+        "max": 179100,
+        "cv_percent": 3.49484
+      },
+      "metrics": {
+        "comparisons": 623750,
+        "moves": 623750,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 772267,
+        "median": 759200,
+        "stddev": 67344.6,
+        "min": 697100,
+        "max": 860500,
+        "cv_percent": 8.72038
+      },
+      "metrics": {
+        "comparisons": 2497500,
+        "moves": 2497500,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.30105e+07,
+        "median": 1.40237e+07,
+        "stddev": 1.87288e+06,
+        "min": 1.03846e+07,
+        "max": 1.46233e+07,
+        "cv_percent": 14.3951
+      },
+      "metrics": {
+        "comparisons": 62487500,
+        "moves": 62487500,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6.18547e+07,
+        "median": 6.18834e+07,
+        "stddev": 2.81013e+06,
+        "min": 5.83988e+07,
+        "max": 6.5282e+07,
+        "cv_percent": 4.54311
+      },
+      "metrics": {
+        "comparisons": 249975000,
+        "moves": 249975000,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2366.67,
+        "median": 2200,
+        "stddev": 235.702,
+        "min": 2200,
+        "max": 2700,
+        "cv_percent": 9.95925
+      },
+      "metrics": {
+        "comparisons": 12860,
+        "moves": 1125,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 78100,
+        "median": 78200,
+        "stddev": 1349.07,
+        "min": 76400,
+        "max": 79700,
+        "cv_percent": 1.72737
+      },
+      "metrics": {
+        "comparisons": 590870,
+        "moves": 44805,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 293100,
+        "median": 293000,
+        "stddev": 2491.32,
+        "min": 290100,
+        "max": 296200,
+        "cv_percent": 0.849989
+      },
+      "metrics": {
+        "comparisons": 2373120,
+        "moves": 150490,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 9.9914e+06,
+        "median": 1.03485e+07,
+        "stddev": 1.76824e+06,
+        "min": 7.6694e+06,
+        "max": 1.19563e+07,
+        "cv_percent": 17.6976
+      },
+      "metrics": {
+        "comparisons": 61948340,
+        "moves": 3882740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4.76003e+07,
+        "median": 4.78067e+07,
+        "stddev": 1.89024e+06,
+        "min": 4.5189e+07,
+        "max": 4.98053e+07,
+        "cv_percent": 3.97106
+      },
+      "metrics": {
+        "comparisons": 249361980,
+        "moves": 16043470,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6633.33,
+        "median": 6300,
+        "stddev": 543.65,
+        "min": 6200,
+        "max": 7400,
+        "cv_percent": 8.19573
+      },
+      "metrics": {
+        "comparisons": 23595,
+        "moves": 11595,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 177267,
+        "median": 177400,
+        "stddev": 12002.9,
+        "min": 162500,
+        "max": 191900,
+        "cv_percent": 6.77108
+      },
+      "metrics": {
+        "comparisons": 586965,
+        "moves": 256165,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 656100,
+        "median": 659900,
+        "stddev": 8054.81,
+        "min": 644900,
+        "max": 663500,
+        "cv_percent": 1.22768
+      },
+      "metrics": {
+        "comparisons": 2382995,
+        "moves": 971605,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.90935e+07,
+        "median": 1.76047e+07,
+        "stddev": 2.24377e+06,
+        "min": 1.74111e+07,
+        "max": 2.22647e+07,
+        "cv_percent": 11.7515
+      },
+      "metrics": {
+        "comparisons": 59999985,
+        "moves": 25313050,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Bubble Sort (Optimized)",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5.8648e+07,
+        "median": 6.06406e+07,
+        "stddev": 4.42955e+06,
+        "min": 5.25084e+07,
+        "max": 6.2795e+07,
+        "cv_percent": 7.55277
+      },
+      "metrics": {
+        "comparisons": 239426540,
+        "moves": 90833985,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4733.33,
+        "median": 4500,
+        "stddev": 402.768,
+        "min": 4400,
+        "max": 5300,
+        "cv_percent": 8.50919
+      },
+      "metrics": {
+        "comparisons": 12490,
+        "moves": 13000,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 71400,
+        "median": 71300,
+        "stddev": 216.025,
+        "min": 71200,
+        "max": 71700,
+        "cv_percent": 0.302556
+      },
+      "metrics": {
+        "comparisons": 307325,
+        "moves": 309840,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 255800,
+        "median": 264000,
+        "stddev": 12382.5,
+        "min": 238300,
+        "max": 265100,
+        "cv_percent": 4.8407
+      },
+      "metrics": {
+        "comparisons": 1255590,
+        "moves": 1260635,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7.00413e+06,
+        "median": 6.9423e+06,
+        "stddev": 371273,
+        "min": 6.5835e+06,
+        "max": 7.4866e+06,
+        "cv_percent": 5.30076
+      },
+      "metrics": {
+        "comparisons": 31732845,
+        "moves": 31757885,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.92104e+07,
+        "median": 1.65042e+07,
+        "stddev": 4.2051e+06,
+        "min": 1.59774e+07,
+        "max": 2.51495e+07,
+        "cv_percent": 21.8898
+      },
+      "metrics": {
+        "comparisons": 124880240,
+        "moves": 124930275,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 633.333,
+        "median": 600,
+        "stddev": 47.1405,
+        "min": 600,
+        "max": 700,
+        "cv_percent": 7.44323
+      },
+      "metrics": {
+        "comparisons": 495,
+        "moves": 990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2100,
+        "median": 2100,
+        "stddev": 0,
+        "min": 2100,
+        "max": 2100,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 2495,
+        "moves": 4990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3933.33,
+        "median": 3900,
+        "stddev": 47.1405,
+        "min": 3900,
+        "max": 4000,
+        "cv_percent": 1.19849
+      },
+      "metrics": {
+        "comparisons": 4995,
+        "moves": 9990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 18700,
+        "median": 18700,
+        "stddev": 0,
+        "min": 18700,
+        "max": 18700,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 24995,
+        "moves": 49990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 39900,
+        "median": 39900,
+        "stddev": 81.6497,
+        "min": 39800,
+        "max": 40000,
+        "cv_percent": 0.204636
+      },
+      "metrics": {
+        "comparisons": 49995,
+        "moves": 99990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5766.67,
+        "median": 5800,
+        "stddev": 124.722,
+        "min": 5600,
+        "max": 5900,
+        "cv_percent": 2.16281
+      },
+      "metrics": {
+        "comparisons": 24750,
+        "moves": 25740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 111133,
+        "median": 111600,
+        "stddev": 659.966,
+        "min": 110200,
+        "max": 111600,
+        "cv_percent": 0.593851
+      },
+      "metrics": {
+        "comparisons": 623750,
+        "moves": 628740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 483167,
+        "median": 486400,
+        "stddev": 14591.4,
+        "min": 463900,
+        "max": 499200,
+        "cv_percent": 3.01995
+      },
+      "metrics": {
+        "comparisons": 2497500,
+        "moves": 2507490,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.00323e+07,
+        "median": 9.8603e+06,
+        "stddev": 1.08855e+06,
+        "min": 8.7935e+06,
+        "max": 1.14432e+07,
+        "cv_percent": 10.8505
+      },
+      "metrics": {
+        "comparisons": 62487500,
+        "moves": 62537490,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4.19099e+07,
+        "median": 3.81944e+07,
+        "stddev": 5.31814e+06,
+        "min": 3.81046e+07,
+        "max": 4.94307e+07,
+        "cv_percent": 12.6894
+      },
+      "metrics": {
+        "comparisons": 249975000,
+        "moves": 250074990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1366.67,
+        "median": 1300,
+        "stddev": 169.967,
+        "min": 1200,
+        "max": 1600,
+        "cv_percent": 12.4366
+      },
+      "metrics": {
+        "comparisons": 2440,
+        "moves": 2935,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 11166.7,
+        "median": 11100,
+        "stddev": 169.967,
+        "min": 11000,
+        "max": 11400,
+        "cv_percent": 1.5221
+      },
+      "metrics": {
+        "comparisons": 39570,
+        "moves": 42065,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 43000,
+        "median": 42900,
+        "stddev": 141.421,
+        "min": 42900,
+        "max": 43200,
+        "cv_percent": 0.328887
+      },
+      "metrics": {
+        "comparisons": 166745,
+        "moves": 171740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 900000,
+        "median": 897000,
+        "stddev": 54828,
+        "min": 834400,
+        "max": 968600,
+        "cv_percent": 6.092
+      },
+      "metrics": {
+        "comparisons": 3814775,
+        "moves": 3839770,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3.69633e+06,
+        "median": 3.8204e+06,
+        "stddev": 389515,
+        "min": 3.1695e+06,
+        "max": 4.0991e+06,
+        "cv_percent": 10.5379
+      },
+      "metrics": {
+        "comparisons": 15517815,
+        "moves": 15567810,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4633.33,
+        "median": 4400,
+        "stddev": 402.768,
+        "min": 4300,
+        "max": 5200,
+        "cv_percent": 8.69284
+      },
+      "metrics": {
+        "comparisons": 9655,
+        "moves": 10150,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 73766.7,
+        "median": 68800,
+        "stddev": 7308.59,
+        "min": 68400,
+        "max": 84100,
+        "cv_percent": 9.90772
+      },
+      "metrics": {
+        "comparisons": 251910,
+        "moves": 254410,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 241733,
+        "median": 241700,
+        "stddev": 286.744,
+        "min": 241400,
+        "max": 242100,
+        "cv_percent": 0.11862
+      },
+      "metrics": {
+        "comparisons": 989225,
+        "moves": 994225,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4.8909e+06,
+        "median": 4.8831e+06,
+        "stddev": 158007,
+        "min": 4.7014e+06,
+        "max": 5.0882e+06,
+        "cv_percent": 3.23063
+      },
+      "metrics": {
+        "comparisons": 25444360,
+        "moves": 25469360,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.2982e+07,
+        "median": 1.29986e+07,
+        "stddev": 119092,
+        "min": 1.28286e+07,
+        "max": 1.31189e+07,
+        "cv_percent": 0.91736
+      },
+      "metrics": {
+        "comparisons": 100913175,
+        "moves": 100963175,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2500,
+        "median": 2300,
+        "stddev": 282.843,
+        "min": 2300,
+        "max": 2900,
+        "cv_percent": 11.3137
+      },
+      "metrics": {
+        "comparisons": 2655,
+        "moves": 11830,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 41233.3,
+        "median": 41800,
+        "stddev": 801.388,
+        "min": 40100,
+        "max": 41800,
+        "cv_percent": 1.94354
+      },
+      "metrics": {
+        "comparisons": 18950,
+        "moves": 300295,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 126600,
+        "median": 126800,
+        "stddev": 282.843,
+        "min": 126200,
+        "max": 126800,
+        "cv_percent": 0.223414
+      },
+      "metrics": {
+        "comparisons": 42955,
+        "moves": 1205575,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.7694e+06,
+        "median": 1.7203e+06,
+        "stddev": 75528.1,
+        "min": 1.7118e+06,
+        "max": 1.8761e+06,
+        "cv_percent": 4.26857
+      },
+      "metrics": {
+        "comparisons": 272595,
+        "moves": 31249795,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7.24687e+06,
+        "median": 6.7551e+06,
+        "stddev": 1.0421e+06,
+        "min": 6.2896e+06,
+        "max": 8.6959e+06,
+        "cv_percent": 14.38
+      },
+      "metrics": {
+        "comparisons": 595055,
+        "moves": 125736815,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1100,
+        "median": 1100,
+        "stddev": 81.6497,
+        "min": 1000,
+        "max": 1200,
+        "cv_percent": 7.4227
+      },
+      "metrics": {
+        "comparisons": 2400,
+        "moves": 990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4400,
+        "median": 4400,
+        "stddev": 81.6497,
+        "min": 4300,
+        "max": 4500,
+        "cv_percent": 1.85567
+      },
+      "metrics": {
+        "comparisons": 17490,
+        "moves": 4990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 9433.33,
+        "median": 9100,
+        "stddev": 543.65,
+        "min": 9000,
+        "max": 10200,
+        "cv_percent": 5.76308
+      },
+      "metrics": {
+        "comparisons": 39935,
+        "moves": 9990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 56266.7,
+        "median": 56500,
+        "stddev": 953.357,
+        "min": 55000,
+        "max": 57300,
+        "cv_percent": 1.69435
+      },
+      "metrics": {
+        "comparisons": 259110,
+        "moves": 49990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 147933,
+        "median": 139900,
+        "stddev": 18101.6,
+        "min": 130900,
+        "max": 173000,
+        "cv_percent": 12.2363
+      },
+      "metrics": {
+        "comparisons": 568155,
+        "moves": 99990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7933.33,
+        "median": 4500,
+        "stddev": 5140.9,
+        "min": 4100,
+        "max": 15200,
+        "cv_percent": 64.8013
+      },
+      "metrics": {
+        "comparisons": 2865,
+        "moves": 25740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 57200,
+        "median": 53300,
+        "stddev": 5944.75,
+        "min": 52700,
+        "max": 65600,
+        "cv_percent": 10.3929
+      },
+      "metrics": {
+        "comparisons": 19945,
+        "moves": 628740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 220700,
+        "median": 185200,
+        "stddev": 51055.5,
+        "min": 184000,
+        "max": 292900,
+        "cv_percent": 23.1334
+      },
+      "metrics": {
+        "comparisons": 44885,
+        "moves": 2507490,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2.7851e+06,
+        "median": 2.7781e+06,
+        "stddev": 188186,
+        "min": 2.5582e+06,
+        "max": 3.019e+06,
+        "cv_percent": 6.75688
+      },
+      "metrics": {
+        "comparisons": 284045,
+        "moves": 62537490,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.65916e+07,
+        "median": 1.63498e+07,
+        "stddev": 822418,
+        "min": 1.57272e+07,
+        "max": 1.76977e+07,
+        "cv_percent": 4.95684
+      },
+      "metrics": {
+        "comparisons": 618085,
+        "moves": 250074990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1866.67,
+        "median": 1800,
+        "stddev": 249.444,
+        "min": 1600,
+        "max": 2200,
+        "cv_percent": 13.3631
+      },
+      "metrics": {
+        "comparisons": 2570,
+        "moves": 1850,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 15633.3,
+        "median": 15400,
+        "stddev": 713.364,
+        "min": 14900,
+        "max": 16600,
+        "cv_percent": 4.5631
+      },
+      "metrics": {
+        "comparisons": 18805,
+        "moves": 46725,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 44066.7,
+        "median": 39100,
+        "stddev": 8850.74,
+        "min": 36600,
+        "max": 56500,
+        "cv_percent": 20.0849
+      },
+      "metrics": {
+        "comparisons": 43105,
+        "moves": 159990,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 569200,
+        "median": 516900,
+        "stddev": 74388,
+        "min": 516300,
+        "max": 674400,
+        "cv_percent": 13.0689
+      },
+      "metrics": {
+        "comparisons": 271715,
+        "moves": 3698430,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.89223e+06,
+        "median": 1.8588e+06,
+        "stddev": 50064.9,
+        "min": 1.8549e+06,
+        "max": 1.963e+06,
+        "cv_percent": 2.64581
+      },
+      "metrics": {
+        "comparisons": 594630,
+        "moves": 16059480,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3700,
+        "median": 3600,
+        "stddev": 374.166,
+        "min": 3300,
+        "max": 4200,
+        "cv_percent": 10.1126
+      },
+      "metrics": {
+        "comparisons": 2590,
+        "moves": 11475,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 47633.3,
+        "median": 47900,
+        "stddev": 524.934,
+        "min": 46900,
+        "max": 48100,
+        "cv_percent": 1.10203
+      },
+      "metrics": {
+        "comparisons": 18815,
+        "moves": 225305,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 140400,
+        "median": 140300,
+        "stddev": 1512.17,
+        "min": 138600,
+        "max": 142300,
+        "cv_percent": 1.07705
+      },
+      "metrics": {
+        "comparisons": 42445,
+        "moves": 994335,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2.05143e+06,
+        "median": 2.0049e+06,
+        "stddev": 90535.1,
+        "min": 1.9714e+06,
+        "max": 2.178e+06,
+        "cv_percent": 4.41326
+      },
+      "metrics": {
+        "comparisons": 270230,
+        "moves": 25549425,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Binary Insertion Sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6.3383e+06,
+        "median": 5.8471e+06,
+        "stddev": 803876,
+        "min": 5.696e+06,
+        "max": 7.4718e+06,
+        "cv_percent": 12.6828
+      },
+      "metrics": {
+        "comparisons": 590135,
+        "moves": 100984430,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4600,
+        "median": 4300,
+        "stddev": 424.264,
+        "min": 4300,
+        "max": 5200,
+        "cv_percent": 9.22313
+      },
+      "metrics": {
+        "comparisons": 2725,
+        "moves": 6720,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 28166.7,
+        "median": 27400,
+        "stddev": 1604.85,
+        "min": 26700,
+        "max": 30400,
+        "cv_percent": 5.69771
+      },
+      "metrics": {
+        "comparisons": 19365,
+        "moves": 44880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 90333.3,
+        "median": 89600,
+        "stddev": 5901.6,
+        "min": 83500,
+        "max": 97900,
+        "cv_percent": 6.53314
+      },
+      "metrics": {
+        "comparisons": 43480,
+        "moves": 99760,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 669833,
+        "median": 672600,
+        "stddev": 44256.6,
+        "min": 614300,
+        "max": 722600,
+        "cv_percent": 6.6071
+      },
+      "metrics": {
+        "comparisons": 276090,
+        "moves": 618080,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.80463e+06,
+        "median": 1.5609e+06,
+        "stddev": 537390,
+        "min": 1.3031e+06,
+        "max": 2.5499e+06,
+        "cv_percent": 29.7783
+      },
+      "metrics": {
+        "comparisons": 602185,
+        "moves": 1336160,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2733.33,
+        "median": 2700,
+        "stddev": 124.722,
+        "min": 2600,
+        "max": 2900,
+        "cv_percent": 4.563
+      },
+      "metrics": {
+        "comparisons": 1580,
+        "moves": 6720,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 19833.3,
+        "median": 14600,
+        "stddev": 8191.19,
+        "min": 13500,
+        "max": 31400,
+        "cv_percent": 41.3001
+      },
+      "metrics": {
+        "comparisons": 11080,
+        "moves": 44880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 76000,
+        "median": 56000,
+        "stddev": 37699.2,
+        "min": 43200,
+        "max": 128800,
+        "cv_percent": 49.6042
+      },
+      "metrics": {
+        "comparisons": 24660,
+        "moves": 99760,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 258533,
+        "median": 270300,
+        "stddev": 21026.4,
+        "min": 229000,
+        "max": 276300,
+        "cv_percent": 8.13295
+      },
+      "metrics": {
+        "comparisons": 149020,
+        "moves": 618080,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.16817e+06,
+        "median": 1.3557e+06,
+        "stddev": 281056,
+        "min": 770900,
+        "max": 1.3779e+06,
+        "cv_percent": 24.0596
+      },
+      "metrics": {
+        "comparisons": 323040,
+        "moves": 1336160,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 10400,
+        "median": 10500,
+        "stddev": 216.025,
+        "min": 10100,
+        "max": 10600,
+        "cv_percent": 2.07716
+      },
+      "metrics": {
+        "comparisons": 1780,
+        "moves": 6720,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 50466.7,
+        "median": 50800,
+        "stddev": 618.241,
+        "min": 49600,
+        "max": 51000,
+        "cv_percent": 1.22505
+      },
+      "metrics": {
+        "comparisons": 11360,
+        "moves": 44880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 100700,
+        "median": 100800,
+        "stddev": 1430.62,
+        "min": 98900,
+        "max": 102400,
+        "cv_percent": 1.42067
+      },
+      "metrics": {
+        "comparisons": 25220,
+        "moves": 99760,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 284667,
+        "median": 280100,
+        "stddev": 7617.67,
+        "min": 278500,
+        "max": 295400,
+        "cv_percent": 2.676
+      },
+      "metrics": {
+        "comparisons": 160020,
+        "moves": 618080,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 926533,
+        "median": 812900,
+        "stddev": 167035,
+        "min": 804000,
+        "max": 1.1627e+06,
+        "cv_percent": 18.0279
+      },
+      "metrics": {
+        "comparisons": 345040,
+        "moves": 1336160,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6733.33,
+        "median": 6700,
+        "stddev": 612.826,
+        "min": 6000,
+        "max": 7500,
+        "cv_percent": 9.10137
+      },
+      "metrics": {
+        "comparisons": 2095,
+        "moves": 6720,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 35400,
+        "median": 34500,
+        "stddev": 1416.57,
+        "min": 34300,
+        "max": 37400,
+        "cv_percent": 4.00161
+      },
+      "metrics": {
+        "comparisons": 15590,
+        "moves": 44880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 143933,
+        "median": 106300,
+        "stddev": 64939.5,
+        "min": 90200,
+        "max": 235300,
+        "cv_percent": 45.1177
+      },
+      "metrics": {
+        "comparisons": 37135,
+        "moves": 99760,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 424933,
+        "median": 392100,
+        "stddev": 58714.7,
+        "min": 375300,
+        "max": 507400,
+        "cv_percent": 13.8174
+      },
+      "metrics": {
+        "comparisons": 244975,
+        "moves": 618080,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1.10037e+06,
+        "median": 1.1013e+06,
+        "stddev": 17403.9,
+        "min": 1.0786e+06,
+        "max": 1.1212e+06,
+        "cv_percent": 1.58165
+      },
+      "metrics": {
+        "comparisons": 543720,
+        "moves": 1336160,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5800,
+        "median": 5900,
+        "stddev": 216.025,
+        "min": 5500,
+        "max": 6000,
+        "cv_percent": 3.72456
+      },
+      "metrics": {
+        "comparisons": 2590,
+        "moves": 6720,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 34700,
+        "median": 34600,
+        "stddev": 2001.67,
+        "min": 32300,
+        "max": 37200,
+        "cv_percent": 5.76849
+      },
+      "metrics": {
+        "comparisons": 18215,
+        "moves": 44880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 78866.7,
+        "median": 78100,
+        "stddev": 2548.64,
+        "min": 76200,
+        "max": 82300,
+        "cv_percent": 3.23158
+      },
+      "metrics": {
+        "comparisons": 40585,
+        "moves": 99760,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 432033,
+        "median": 470200,
+        "stddev": 73210.9,
+        "min": 329600,
+        "max": 496300,
+        "cv_percent": 16.9456
+      },
+      "metrics": {
+        "comparisons": 255780,
+        "moves": 618080,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 671867,
+        "median": 669300,
+        "stddev": 13715.3,
+        "min": 656500,
+        "max": 689800,
+        "cv_percent": 2.04137
+      },
+      "metrics": {
+        "comparisons": 557620,
+        "moves": 1336160,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3300,
+        "median": 2900,
+        "stddev": 565.685,
+        "min": 2900,
+        "max": 4100,
+        "cv_percent": 17.142
+      },
+      "metrics": {
+        "comparisons": 2800,
+        "moves": 6880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 16733.3,
+        "median": 17000,
+        "stddev": 601.849,
+        "min": 15900,
+        "max": 17300,
+        "cv_percent": 3.59671
+      },
+      "metrics": {
+        "comparisons": 19285,
+        "moves": 44920,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 37533.3,
+        "median": 37600,
+        "stddev": 169.967,
+        "min": 37300,
+        "max": 37700,
+        "cv_percent": 0.452844
+      },
+      "metrics": {
+        "comparisons": 43795,
+        "moves": 99840,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 340800,
+        "median": 353000,
+        "stddev": 43165.3,
+        "min": 282900,
+        "max": 386500,
+        "cv_percent": 12.6659
+      },
+      "metrics": {
+        "comparisons": 283620,
+        "moves": 631600,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 641467,
+        "median": 641300,
+        "stddev": 10166.1,
+        "min": 629100,
+        "max": 654000,
+        "cv_percent": 1.58482
+      },
+      "metrics": {
+        "comparisons": 618540,
+        "moves": 1363200,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2400,
+        "median": 2400,
+        "stddev": 163.299,
+        "min": 2200,
+        "max": 2600,
+        "cv_percent": 6.80414
+      },
+      "metrics": {
+        "comparisons": 1860,
+        "moves": 6880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 11733.3,
+        "median": 11700,
+        "stddev": 124.722,
+        "min": 11600,
+        "max": 11900,
+        "cv_percent": 1.06297
+      },
+      "metrics": {
+        "comparisons": 11380,
+        "moves": 44920,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 24566.7,
+        "median": 24600,
+        "stddev": 47.1405,
+        "min": 24500,
+        "max": 24600,
+        "cv_percent": 0.191888
+      },
+      "metrics": {
+        "comparisons": 25260,
+        "moves": 99840,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 176733,
+        "median": 176800,
+        "stddev": 169.967,
+        "min": 176500,
+        "max": 176900,
+        "cv_percent": 0.0961716
+      },
+      "metrics": {
+        "comparisons": 166780,
+        "moves": 631600,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 371067,
+        "median": 370900,
+        "stddev": 385.861,
+        "min": 370700,
+        "max": 371600,
+        "cv_percent": 0.103987
+      },
+      "metrics": {
+        "comparisons": 358560,
+        "moves": 1363200,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2266.67,
+        "median": 2300,
+        "stddev": 47.1405,
+        "min": 2200,
+        "max": 2300,
+        "cv_percent": 2.07973
+      },
+      "metrics": {
+        "comparisons": 1580,
+        "moves": 6880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 11533.3,
+        "median": 11500,
+        "stddev": 124.722,
+        "min": 11400,
+        "max": 11700,
+        "cv_percent": 1.0814
+      },
+      "metrics": {
+        "comparisons": 11080,
+        "moves": 44920,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 24200,
+        "median": 24200,
+        "stddev": 81.6497,
+        "min": 24100,
+        "max": 24300,
+        "cv_percent": 0.337395
+      },
+      "metrics": {
+        "comparisons": 24660,
+        "moves": 99840,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 166500,
+        "median": 164800,
+        "stddev": 2475.21,
+        "min": 164700,
+        "max": 170000,
+        "cv_percent": 1.48661
+      },
+      "metrics": {
+        "comparisons": 149020,
+        "moves": 631600,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 348500,
+        "median": 348200,
+        "stddev": 2174.09,
+        "min": 346000,
+        "max": 351300,
+        "cv_percent": 0.623842
+      },
+      "metrics": {
+        "comparisons": 323040,
+        "moves": 1363200,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2766.67,
+        "median": 2700,
+        "stddev": 169.967,
+        "min": 2600,
+        "max": 3000,
+        "cv_percent": 6.1434
+      },
+      "metrics": {
+        "comparisons": 2420,
+        "moves": 6880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 16233.3,
+        "median": 16200,
+        "stddev": 449.691,
+        "min": 15700,
+        "max": 16800,
+        "cv_percent": 2.77017
+      },
+      "metrics": {
+        "comparisons": 16495,
+        "moves": 44920,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 34200,
+        "median": 33900,
+        "stddev": 571.548,
+        "min": 33700,
+        "max": 35000,
+        "cv_percent": 1.67119
+      },
+      "metrics": {
+        "comparisons": 38235,
+        "moves": 99840,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 251533,
+        "median": 250800,
+        "stddev": 3710.65,
+        "min": 247400,
+        "max": 256400,
+        "cv_percent": 1.47521
+      },
+      "metrics": {
+        "comparisons": 260605,
+        "moves": 631600,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 550700,
+        "median": 550600,
+        "stddev": 3470.83,
+        "min": 546500,
+        "max": 555000,
+        "cv_percent": 0.630258
+      },
+      "metrics": {
+        "comparisons": 567825,
+        "moves": 1363200,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2866.67,
+        "median": 2700,
+        "stddev": 235.702,
+        "min": 2700,
+        "max": 3200,
+        "cv_percent": 8.22217
+      },
+      "metrics": {
+        "comparisons": 2700,
+        "moves": 6880,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 16000,
+        "median": 15900,
+        "stddev": 374.166,
+        "min": 15600,
+        "max": 16500,
+        "cv_percent": 2.33854
+      },
+      "metrics": {
+        "comparisons": 18250,
+        "moves": 44920,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 36866.7,
+        "median": 36200,
+        "stddev": 1857.12,
+        "min": 35000,
+        "max": 39400,
+        "cv_percent": 5.03739
+      },
+      "metrics": {
+        "comparisons": 40970,
+        "moves": 99840,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 279200,
+        "median": 280300,
+        "stddev": 7348.92,
+        "min": 269700,
+        "max": 287600,
+        "cv_percent": 2.63214
+      },
+      "metrics": {
+        "comparisons": 265070,
+        "moves": 631600,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Bottom-Up Merge Sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 598567,
+        "median": 599000,
+        "stddev": 2266.18,
+        "min": 595600,
+        "max": 601100,
+        "cv_percent": 0.378601
+      },
+      "metrics": {
+        "comparisons": 578250,
+        "moves": 1363200,
+        "allocations": 5
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1500,
+        "median": 1400,
+        "stddev": 374.166,
+        "min": 1100,
+        "max": 2000,
+        "cv_percent": 24.9444
+      },
+      "metrics": {
+        "comparisons": 3915,
+        "moves": 2415,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6333.33,
+        "median": 5900,
+        "stddev": 910.433,
+        "min": 5500,
+        "max": 7600,
+        "cv_percent": 14.3753
+      },
+      "metrics": {
+        "comparisons": 26435,
+        "moves": 13985,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 21400,
+        "median": 20400,
+        "stddev": 3261.9,
+        "min": 18000,
+        "max": 25800,
+        "cv_percent": 15.2425
+      },
+      "metrics": {
+        "comparisons": 57610,
+        "moves": 29480,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 263467,
+        "median": 262700,
+        "stddev": 4482.81,
+        "min": 258400,
+        "max": 269300,
+        "cv_percent": 1.70147
+      },
+      "metrics": {
+        "comparisons": 375655,
+        "moves": 159640,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 603100,
+        "median": 602900,
+        "stddev": 2046.13,
+        "min": 600700,
+        "max": 605700,
+        "cv_percent": 0.33927
+      },
+      "metrics": {
+        "comparisons": 793105,
+        "moves": 328240,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 633.333,
+        "median": 600,
+        "stddev": 47.1405,
+        "min": 600,
+        "max": 700,
+        "cv_percent": 7.44323
+      },
+      "metrics": {
+        "comparisons": 2100,
+        "moves": 920,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2633.33,
+        "median": 2600,
+        "stddev": 124.722,
+        "min": 2500,
+        "max": 2800,
+        "cv_percent": 4.73628
+      },
+      "metrics": {
+        "comparisons": 16160,
+        "moves": 4610,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5400,
+        "median": 5400,
+        "stddev": 0,
+        "min": 5400,
+        "max": 5400,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 37240,
+        "moves": 9230,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 30533.3,
+        "median": 30500,
+        "stddev": 205.48,
+        "min": 30300,
+        "max": 30800,
+        "cv_percent": 0.672971
+      },
+      "metrics": {
+        "comparisons": 257660,
+        "moves": 44880,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 63933.3,
+        "median": 64000,
+        "stddev": 94.2809,
+        "min": 63800,
+        "max": 64000,
+        "cv_percent": 0.147468
+      },
+      "metrics": {
+        "comparisons": 565340,
+        "moves": 89760,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 733.333,
+        "median": 700,
+        "stddev": 47.1405,
+        "min": 700,
+        "max": 800,
+        "cv_percent": 6.42824
+      },
+      "metrics": {
+        "comparisons": 2095,
+        "moves": 1180,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2866.67,
+        "median": 2900,
+        "stddev": 47.1405,
+        "min": 2800,
+        "max": 2900,
+        "cv_percent": 1.64443
+      },
+      "metrics": {
+        "comparisons": 16155,
+        "moves": 5870,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7900,
+        "median": 5800,
+        "stddev": 3040.83,
+        "min": 5700,
+        "max": 12200,
+        "cv_percent": 38.4916
+      },
+      "metrics": {
+        "comparisons": 37235,
+        "moves": 11740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 41566.7,
+        "median": 46000,
+        "stddev": 6698.42,
+        "min": 32100,
+        "max": 46600,
+        "cv_percent": 16.1149
+      },
+      "metrics": {
+        "comparisons": 257655,
+        "moves": 57390,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 67466.7,
+        "median": 67500,
+        "stddev": 286.744,
+        "min": 67100,
+        "max": 67800,
+        "cv_percent": 0.425016
+      },
+      "metrics": {
+        "comparisons": 565335,
+        "moves": 114770,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 666.667,
+        "median": 600,
+        "stddev": 94.2809,
+        "min": 600,
+        "max": 800,
+        "cv_percent": 14.1421
+      },
+      "metrics": {
+        "comparisons": 2135,
+        "moves": 995,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3366.67,
+        "median": 3400,
+        "stddev": 205.48,
+        "min": 3100,
+        "max": 3600,
+        "cv_percent": 6.10338
+      },
+      "metrics": {
+        "comparisons": 17120,
+        "moves": 5340,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7600,
+        "median": 7400,
+        "stddev": 668.331,
+        "min": 6900,
+        "max": 8500,
+        "cv_percent": 8.79383
+      },
+      "metrics": {
+        "comparisons": 38415,
+        "moves": 10580,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 64766.7,
+        "median": 64200,
+        "stddev": 2522.34,
+        "min": 62000,
+        "max": 68100,
+        "cv_percent": 3.89451
+      },
+      "metrics": {
+        "comparisons": 268805,
+        "moves": 54360,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 150567,
+        "median": 150200,
+        "stddev": 3561.21,
+        "min": 146400,
+        "max": 155100,
+        "cv_percent": 2.36521
+      },
+      "metrics": {
+        "comparisons": 582985,
+        "moves": 110605,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 900,
+        "median": 800,
+        "stddev": 141.421,
+        "min": 800,
+        "max": 1100,
+        "cv_percent": 15.7135
+      },
+      "metrics": {
+        "comparisons": 2575,
+        "moves": 1815,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3833.33,
+        "median": 3700,
+        "stddev": 498.888,
+        "min": 3300,
+        "max": 4500,
+        "cv_percent": 13.0145
+      },
+      "metrics": {
+        "comparisons": 17310,
+        "moves": 10110,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 8300,
+        "median": 7900,
+        "stddev": 787.401,
+        "min": 7600,
+        "max": 9400,
+        "cv_percent": 9.48676
+      },
+      "metrics": {
+        "comparisons": 43875,
+        "moves": 22280,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 82333.3,
+        "median": 81800,
+        "stddev": 3449.96,
+        "min": 78400,
+        "max": 86800,
+        "cv_percent": 4.19023
+      },
+      "metrics": {
+        "comparisons": 259715,
+        "moves": 139295,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 207067,
+        "median": 209000,
+        "stddev": 4850.66,
+        "min": 200400,
+        "max": 211800,
+        "cv_percent": 2.34256
+      },
+      "metrics": {
+        "comparisons": 567220,
+        "moves": 305240,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1166.67,
+        "median": 1100,
+        "stddev": 169.967,
+        "min": 1000,
+        "max": 1400,
+        "cv_percent": 14.5686
+      },
+      "metrics": {
+        "comparisons": 4045,
+        "moves": 3665,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 11600,
+        "median": 11400,
+        "stddev": 1476.48,
+        "min": 9900,
+        "max": 13500,
+        "cv_percent": 12.7283
+      },
+      "metrics": {
+        "comparisons": 32870,
+        "moves": 27890,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 46000,
+        "median": 46100,
+        "stddev": 860.233,
+        "min": 44900,
+        "max": 47000,
+        "cv_percent": 1.87007
+      },
+      "metrics": {
+        "comparisons": 70055,
+        "moves": 55695,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 319567,
+        "median": 319600,
+        "stddev": 2490.43,
+        "min": 316500,
+        "max": 322600,
+        "cv_percent": 0.779313
+      },
+      "metrics": {
+        "comparisons": 463770,
+        "moves": 352985,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 712433,
+        "median": 707700,
+        "stddev": 7122.42,
+        "min": 707100,
+        "max": 722500,
+        "cv_percent": 0.999732
+      },
+      "metrics": {
+        "comparisons": 1021600,
+        "moves": 773410,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1366.67,
+        "median": 1300,
+        "stddev": 249.444,
+        "min": 1100,
+        "max": 1700,
+        "cv_percent": 18.252
+      },
+      "metrics": {
+        "comparisons": 5640,
+        "moves": 3980,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 10066.7,
+        "median": 9900,
+        "stddev": 543.65,
+        "min": 9500,
+        "max": 10800,
+        "cv_percent": 5.4005
+      },
+      "metrics": {
+        "comparisons": 62755,
+        "moves": 37430,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 25033.3,
+        "median": 25100,
+        "stddev": 573.488,
+        "min": 24300,
+        "max": 25700,
+        "cv_percent": 2.2909
+      },
+      "metrics": {
+        "comparisons": 175875,
+        "moves": 100780,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 252467,
+        "median": 251900,
+        "stddev": 3331,
+        "min": 248700,
+        "max": 256800,
+        "cv_percent": 1.31938
+      },
+      "metrics": {
+        "comparisons": 1925955,
+        "moves": 1032935,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 711367,
+        "median": 714900,
+        "stddev": 5865.91,
+        "min": 703100,
+        "max": 716100,
+        "cv_percent": 0.824597
+      },
+      "metrics": {
+        "comparisons": 5414960,
+        "moves": 2854280,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1066.67,
+        "median": 1000,
+        "stddev": 169.967,
+        "min": 900,
+        "max": 1300,
+        "cv_percent": 15.9344
+      },
+      "metrics": {
+        "comparisons": 4140,
+        "moves": 3200,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7400,
+        "median": 7300,
+        "stddev": 141.421,
+        "min": 7300,
+        "max": 7600,
+        "cv_percent": 1.9111
+      },
+      "metrics": {
+        "comparisons": 48305,
+        "moves": 30590,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 19000,
+        "median": 18900,
+        "stddev": 216.025,
+        "min": 18800,
+        "max": 19300,
+        "cv_percent": 1.13697
+      },
+      "metrics": {
+        "comparisons": 132920,
+        "moves": 79795,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 185400,
+        "median": 183200,
+        "stddev": 4521.8,
+        "min": 181300,
+        "max": 191700,
+        "cv_percent": 2.43894
+      },
+      "metrics": {
+        "comparisons": 1409285,
+        "moves": 777515,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 531467,
+        "median": 527200,
+        "stddev": 20391.9,
+        "min": 508900,
+        "max": 558300,
+        "cv_percent": 3.83691
+      },
+      "metrics": {
+        "comparisons": 3926595,
+        "moves": 2115740,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1166.67,
+        "median": 1100,
+        "stddev": 249.444,
+        "min": 900,
+        "max": 1500,
+        "cv_percent": 21.3809
+      },
+      "metrics": {
+        "comparisons": 4185,
+        "moves": 3340,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7300,
+        "median": 7400,
+        "stddev": 535.413,
+        "min": 6600,
+        "max": 7900,
+        "cv_percent": 7.33442
+      },
+      "metrics": {
+        "comparisons": 37290,
+        "moves": 26155,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 15233.3,
+        "median": 14900,
+        "stddev": 1167.14,
+        "min": 14000,
+        "max": 16800,
+        "cv_percent": 7.66177
+      },
+      "metrics": {
+        "comparisons": 79390,
+        "moves": 56370,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 153267,
+        "median": 153700,
+        "stddev": 2185.3,
+        "min": 150400,
+        "max": 155700,
+        "cv_percent": 1.42582
+      },
+      "metrics": {
+        "comparisons": 527960,
+        "moves": 360605,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 362733,
+        "median": 362300,
+        "stddev": 6987.77,
+        "min": 354400,
+        "max": 371500,
+        "cv_percent": 1.92642
+      },
+      "metrics": {
+        "comparisons": 1211900,
+        "moves": 816970,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 800,
+        "median": 600,
+        "stddev": 355.903,
+        "min": 500,
+        "max": 1300,
+        "cv_percent": 44.4878
+      },
+      "metrics": {
+        "comparisons": 1560,
+        "moves": 810,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1933.33,
+        "median": 1800,
+        "stddev": 339.935,
+        "min": 1600,
+        "max": 2400,
+        "cv_percent": 17.5828
+      },
+      "metrics": {
+        "comparisons": 11655,
+        "moves": 3555,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2800,
+        "median": 2600,
+        "stddev": 282.843,
+        "min": 2600,
+        "max": 3200,
+        "cv_percent": 10.1015
+      },
+      "metrics": {
+        "comparisons": 20670,
+        "moves": 6320,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 38233.3,
+        "median": 36600,
+        "stddev": 7721.11,
+        "min": 29700,
+        "max": 48400,
+        "cv_percent": 20.1947
+      },
+      "metrics": {
+        "comparisons": 94365,
+        "moves": 34605,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "Quick Sort (3-Way)",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 86766.7,
+        "median": 86600,
+        "stddev": 4288.23,
+        "min": 81600,
+        "max": 92100,
+        "cv_percent": 4.94225
+      },
+      "metrics": {
+        "comparisons": 200815,
+        "moves": 60450,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1233.33,
+        "median": 1200,
+        "stddev": 286.744,
+        "min": 900,
+        "max": 1600,
+        "cv_percent": 23.2495
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 5633.33,
+        "median": 5500,
+        "stddev": 418.994,
+        "min": 5200,
+        "max": 6200,
+        "cv_percent": 7.43775
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 12666.7,
+        "median": 12200,
+        "stddev": 880.656,
+        "min": 11900,
+        "max": 13900,
+        "cv_percent": 6.95255
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 121500,
+        "median": 120500,
+        "stddev": 3982.46,
+        "min": 117200,
+        "max": 126800,
+        "cv_percent": 3.27775
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 311133,
+        "median": 306500,
+        "stddev": 10991.6,
+        "min": 300600,
+        "max": 326300,
+        "cv_percent": 3.53277
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 533.333,
+        "median": 500,
+        "stddev": 124.722,
+        "min": 400,
+        "max": 700,
+        "cv_percent": 23.3854
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 766.667,
+        "median": 700,
+        "stddev": 94.2809,
+        "min": 700,
+        "max": 900,
+        "cv_percent": 12.2975
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1200,
+        "median": 1200,
+        "stddev": 0,
+        "min": 1200,
+        "max": 1200,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4366.67,
+        "median": 4400,
+        "stddev": 124.722,
+        "min": 4200,
+        "max": 4500,
+        "cv_percent": 2.85623
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 9166.67,
+        "median": 9200,
+        "stddev": 124.722,
+        "min": 9000,
+        "max": 9300,
+        "cv_percent": 1.3606
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 566.667,
+        "median": 600,
+        "stddev": 47.1405,
+        "min": 500,
+        "max": 600,
+        "cv_percent": 8.3189
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 1600,
+        "median": 1500,
+        "stddev": 216.025,
+        "min": 1400,
+        "max": 1900,
+        "cv_percent": 13.5015
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2600,
+        "median": 2600,
+        "stddev": 0,
+        "min": 2600,
+        "max": 2600,
+        "cv_percent": 0
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 11233.3,
+        "median": 11200,
+        "stddev": 124.722,
+        "min": 11100,
+        "max": 11400,
+        "cv_percent": 1.11028
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 22600,
+        "median": 22600,
+        "stddev": 81.6497,
+        "min": 22500,
+        "max": 22700,
+        "cv_percent": 0.361282
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 633.333,
+        "median": 600,
+        "stddev": 47.1405,
+        "min": 600,
+        "max": 700,
+        "cv_percent": 7.44323
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3400,
+        "median": 3500,
+        "stddev": 216.025,
+        "min": 3100,
+        "max": 3600,
+        "cv_percent": 6.35367
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 6800,
+        "median": 6700,
+        "stddev": 294.392,
+        "min": 6500,
+        "max": 7200,
+        "cv_percent": 4.32929
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 62166.7,
+        "median": 59600,
+        "stddev": 9763.99,
+        "min": 51700,
+        "max": 75200,
+        "cv_percent": 15.7062
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 138267,
+        "median": 138300,
+        "stddev": 4939.86,
+        "min": 132200,
+        "max": 144300,
+        "cv_percent": 3.57271
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 933.333,
+        "median": 900,
+        "stddev": 124.722,
+        "min": 800,
+        "max": 1100,
+        "cv_percent": 13.3631
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2900,
+        "median": 2900,
+        "stddev": 163.299,
+        "min": 2700,
+        "max": 3100,
+        "cv_percent": 5.63101
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 4200,
+        "median": 4200,
+        "stddev": 163.299,
+        "min": 4000,
+        "max": 4400,
+        "cv_percent": 3.88808
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 22366.7,
+        "median": 21800,
+        "stddev": 1960.16,
+        "min": 20300,
+        "max": 25000,
+        "cv_percent": 8.76375
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::sort (Introsort)",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 60266.7,
+        "median": 59500,
+        "stddev": 5294.23,
+        "min": 54200,
+        "max": 67100,
+        "cv_percent": 8.78468
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Random",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2100,
+        "median": 2000,
+        "stddev": 216.025,
+        "min": 1900,
+        "max": 2400,
+        "cv_percent": 10.2869
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Random",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 16833.3,
+        "median": 17100,
+        "stddev": 377.124,
+        "min": 16300,
+        "max": 17100,
+        "cv_percent": 2.24034
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Random",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 33800,
+        "median": 34100,
+        "stddev": 1444.53,
+        "min": 31900,
+        "max": 35400,
+        "cv_percent": 4.27376
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Random",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 58833.3,
+        "median": 57900,
+        "stddev": 2615.76,
+        "min": 56200,
+        "max": 62400,
+        "cv_percent": 4.44606
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Random",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 121500,
+        "median": 122700,
+        "stddev": 2286.19,
+        "min": 118300,
+        "max": 123500,
+        "cv_percent": 1.88164
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 333.333,
+        "median": 300,
+        "stddev": 47.1405,
+        "min": 300,
+        "max": 400,
+        "cv_percent": 14.1421
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2966.67,
+        "median": 2900,
+        "stddev": 94.2809,
+        "min": 2900,
+        "max": 3100,
+        "cv_percent": 3.17801
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 9933.33,
+        "median": 9900,
+        "stddev": 47.1405,
+        "min": 9900,
+        "max": 10000,
+        "cv_percent": 0.474568
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 32300,
+        "median": 32200,
+        "stddev": 294.392,
+        "min": 32000,
+        "max": 32700,
+        "cv_percent": 0.91143
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 57766.7,
+        "median": 58000,
+        "stddev": 478.423,
+        "min": 57100,
+        "max": 58200,
+        "cv_percent": 0.8282
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 3233.33,
+        "median": 3200,
+        "stddev": 47.1405,
+        "min": 3200,
+        "max": 3300,
+        "cv_percent": 1.45795
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 25933.3,
+        "median": 25900,
+        "stddev": 47.1405,
+        "min": 25900,
+        "max": 26000,
+        "cv_percent": 0.181776
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 28700,
+        "median": 25800,
+        "stddev": 4315.09,
+        "min": 25500,
+        "max": 34800,
+        "cv_percent": 15.0352
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 49466.7,
+        "median": 49500,
+        "stddev": 286.744,
+        "min": 49100,
+        "max": 49800,
+        "cv_percent": 0.579672
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Reverse Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 105633,
+        "median": 104800,
+        "stddev": 1470.45,
+        "min": 104400,
+        "max": 107700,
+        "cv_percent": 1.39203
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 633.333,
+        "median": 600,
+        "stddev": 47.1405,
+        "min": 600,
+        "max": 700,
+        "cv_percent": 7.44323
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 7100,
+        "median": 7200,
+        "stddev": 216.025,
+        "min": 6800,
+        "max": 7300,
+        "cv_percent": 3.0426
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 19866.7,
+        "median": 19900,
+        "stddev": 205.48,
+        "min": 19600,
+        "max": 20100,
+        "cv_percent": 1.0343
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 50133.3,
+        "median": 50600,
+        "stddev": 880.656,
+        "min": 48900,
+        "max": 50900,
+        "cv_percent": 1.75663
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "Nearly Sorted",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 119900,
+        "median": 111900,
+        "stddev": 17590.9,
+        "min": 103500,
+        "max": 144300,
+        "cv_percent": 14.6713
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "High Duplicates",
+      "input_size": 100,
+      "skipped": false,
+      "time_ns": {
+        "mean": 2066.67,
+        "median": 2000,
+        "stddev": 94.2809,
+        "min": 2000,
+        "max": 2200,
+        "cv_percent": 4.56198
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "High Duplicates",
+      "input_size": 500,
+      "skipped": false,
+      "time_ns": {
+        "mean": 15300,
+        "median": 15200,
+        "stddev": 216.025,
+        "min": 15100,
+        "max": 15600,
+        "cv_percent": 1.41193
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "High Duplicates",
+      "input_size": 1000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 29200,
+        "median": 28300,
+        "stddev": 1416.57,
+        "min": 28100,
+        "max": 31200,
+        "cv_percent": 4.85126
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "High Duplicates",
+      "input_size": 5000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 45166.7,
+        "median": 45100,
+        "stddev": 1633.67,
+        "min": 43200,
+        "max": 47200,
+        "cv_percent": 3.61699
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    },
+    {
+      "algorithm": "std::stable_sort",
+      "distribution": "High Duplicates",
+      "input_size": 10000,
+      "skipped": false,
+      "time_ns": {
+        "mean": 89366.7,
+        "median": 86600,
+        "stddev": 5541.56,
+        "min": 84400,
+        "max": 97100,
+        "cv_percent": 6.20093
+      },
+      "metrics": {
+        "comparisons": 0,
+        "moves": 0,
+        "allocations": 0
+      }
+    }
+  ]
+}

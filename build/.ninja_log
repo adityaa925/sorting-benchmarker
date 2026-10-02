@@ -1,0 +1,10 @@
+# ninja log v7
+70	3802	8126368553575062	tests/CMakeFiles/test_sorting.dir/test_sorting_correctness.cpp.obj	18a13691f696e444
+3803	4005	8126368590902132	tests/test_sorting.exe	d9e79c95c5223f5b
+51	4841	8126368553342581	CMakeFiles/sorting_benchmarker.dir/src/main.cpp.obj	9698a594b6dd612a
+4845	5071	8126368601318738	sorting_benchmarker.exe	a87a1de8f70b9a68
+43	504	8126371170949152	build.ninja	a5174251746ee8d9
+43	504	8126371170949152	C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/cmake_install.cmake	a5174251746ee8d9
+43	504	8126371170949152	C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/tests/cmake_install.cmake	a5174251746ee8d9
+43	504	8126371170949152	C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/CTestTestfile.cmake	a5174251746ee8d9
+43	504	8126371170949152	C:/Users/Aditya Goyal/Desktop/data 1/sorting-benchmarker/build/tests/CTestTestfile.cmake	a5174251746ee8d9
